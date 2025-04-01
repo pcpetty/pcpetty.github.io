@@ -1,227 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cole Petty - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #0078d4;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-        .resume-button {
-            display: inline-block;
-            margin: 2rem;
-            padding: 1rem 2rem;
-            background-color: #0078d4;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-        section h2 {
-            color: #0078d4;
-            margin-top: 2rem;
-        }
-        ul {
-            padding-left: 1.5rem;
-        }
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        /* === Primary Buttons === */
-        .primary-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: orange;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        
-        .primary-btn:hover {
-            background: darkorange;
-        }
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 600;
-            color: #0078d4;
-            margin: 2rem 0 1rem;
-            text-align: center;
-        }
-        .card {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-            padding: 2rem;
-            margin: 1.5rem 0;
-        }
-        .text-muted {
-            color: #666;
-            font-size: 0.9rem;
-        }
-        .content-box {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .centered {
-            text-align: center;
-            margin: 0 auto;
-        }
-              .topbar {
-            background-color: #0078d4;
-            color: white;
-            padding: 1rem;
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .nav-logo {
-            font-weight: bold;
-            font-size: 1.25rem;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .nav-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .nav-button {
-            background-color: #0078d4;
-            color: white;
-            border: none;
-            font-size: 1rem;
-            cursor: pointer;
-            padding: 0.5rem 1rem;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            color: #333;
-            min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-            z-index: 1;
-        }
-        
-        .dropdown-content a {
-            color: #333;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-        
-        .nav-dropdown:hover .dropdown-content {
-            display: block;
-        }  
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cole Petty - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-        <nav class="topbar">
+  <nav class="topbar">
     <div class="nav-container">
-        <a href="#" class="nav-logo">Cole Petty</a>
-        <div class="nav-dropdown">
-            <button class="nav-button">Menu ▼</button>
-            <div class="dropdown-content">
-                <a href="#about">About</a>
-                <a href="Cole_Petty_Resume_APRIL25.html" target="_blank">Resume</a>
-                <a href="#projects">Projects</a>
-                <a href="mailto:colepetty57@gmail.com">Contact</a>
-            </div>
+      <a href="#" class="nav-logo">Cole Petty</a>
+      <div class="nav-dropdown">
+        <button class="nav-button">Menu ▼</button>
+        <div class="dropdown-content">
+          <a href="#about">About</a>
+          <a href="Cole_Petty_Resume_APRIL25.html" target="_blank">Resume</a>
+          <a href="#projects">Projects</a>
+          <a href="mailto:colepetty57@gmail.com">Contact</a>
         </div>
+      </div>
     </div>
-</nav>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <section>
-        <p>Hello! My name is Cole, and this is my portfolio. Here, you'll find information about my projects, skills, and career journey.</p>
-        <a href="Cole_Petty_Resume_APRIL25.html" target="_blank" class="resume-button">View My Resume</a>
-    </section>
-    <section>
-    <h2>🌐 About Me</h2>
+  </nav>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+
+  <section class="content-box card centered">
+    <p>Hello! My name is Cole, and this is my portfolio. Here, you'll find information about my projects, skills, and career journey.</p>
+    <a href="Cole_Petty_Resume_APRIL25.html" target="_blank" class="primary-btn">View My Resume</a>
+  </section>
+
+  <section id="about" class="content-box card">
+    <h2 class="section-title">🌐 About Me</h2>
     <p>I am a logistics professional passionate about solving problems through technology and innovation. My journey in tech has been self-driven, and I specialize in:</p>
     <ul>
-        <p>Data Analysis & Visualization</p>
-        <p>Logistics Optimization</p>
-        <p>CI/CD Pipelines / Agile Development</p>
-        <p>Python, SQL, and Docker</p>
-        <p>And much more!</p>
+      <li>Data Analysis & Visualization</li>
+      <li>Logistics Optimization</li>
+      <li>CI/CD Pipelines / Agile Development</li>
+      <li>Python, SQL, and Docker</li>
+      <li>And much more!</li>
     </ul>
-    <h2>🚀 What You’ll Find Here</h2>
+
+    <h2 class="section-title">🚀 What You’ll Find Here</h2>
     <p>This GitHub Pages site highlights my key projects and learning experiences, grouped into categories for easy navigation:</p>
-    <h3>1. Data Science & Analysis</h3>
+
+    <h3 id="projects">1. Data Science & Analysis</h3>
     <ul>
-        <li><strong>Risk Ranger:</strong> A logistics-focused accident reporting system.</li>
-        <li><strong>Customer Segmentation:</strong> A project on understanding customer behavior.</li>
+      <li><strong>Risk Ranger:</strong> A logistics-focused accident reporting system.</li>
+      <li><strong>Customer Segmentation:</strong> A project on understanding customer behavior.</li>
     </ul>
+
     <h3>2. Logistics Optimization</h3>
     <ul>
-        <p><strong>Haul Monitor</strong></p>
-        <p>Centralized and resilient logistics service.</p>
-        <p><strong>Risk Ranger</strong></p>
-        <p>Site-Dedicated companion for Haul Monitor for offline use.</p>
+      <li><strong>Haul Monitor:</strong> Centralized and resilient logistics service.</li>
+      <li><strong>Risk Ranger:</strong> Site-dedicated companion for Haul Monitor for offline use.</li>
     </ul>
-    <h2>📚 Skills & Technologies</h2>
+
+    <h2 class="section-title">📚 Skills & Technologies</h2>
     <ul>
-        <li><strong>Languages:</strong> Python, SQL, C, HTML</li>
-        <li><strong>Data Tools:</strong> Pandas, Matplotlib, Streamlit</li>
-        <li><strong>DevOps:</strong> Docker, Linux (Arch), Git, Podman</li>
-        <li><strong>Database:</strong> PostgreSQL, SQLAlchemy</li>
-        <li><strong>Misc:</strong> Markdown, CLI tools, Flask</li>
+      <li><strong>Languages:</strong> Python, SQL, C, HTML</li>
+      <li><strong>Data Tools:</strong> Pandas, Matplotlib, Streamlit</li>
+      <li><strong>DevOps:</strong> Docker, Linux (Arch), Git, Podman</li>
+      <li><strong>Database:</strong> PostgreSQL, SQLAlchemy</li>
+      <li><strong>Misc:</strong> Markdown, CLI tools, Flask</li>
     </ul>
-    <h2>🛠️ Work In Progress</h2>
+
+    <h2 class="section-title">🛠️ Work In Progress</h2>
     <ul>
-        <li>Expanding HaulMonitor with Docker and Flask</li>
-        <li>Learning advanced SQL and database design</li>
+      <li>Expanding HaulMonitor with Docker and Flask</li>
+      <li>Learning advanced SQL and database design</li>
     </ul>
-    <h2>📫 Get in Touch</h2>
+
+    <h2 class="section-title">📫 Get in Touch</h2>
     <p>Email me anytime: <a href="mailto:colepetty57@gmail.com">colepetty57@gmail.com</a></p>
-    <h2>🎯 My Mission</h2>
+
+    <h2 class="section-title">🎯 My Mission</h2>
     <p>To break into the tech industry with determination, resilience, and a drive to create impactful solutions.</p>
-</section>
-    <footer>
-        &copy; 2025 Cole Petty
-    </footer>
+  </section>
+
+  <footer>
+    &copy; 2025 Cole Petty
+  </footer>
 </body>
 </html>
