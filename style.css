@@ -104,6 +104,11 @@ body {
 .nav-dropdown:hover .dropdown-content {
   display: block;
 }
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
 /* Footer */
 footer {
@@ -113,3 +118,6 @@ footer {
   color: #fff;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
