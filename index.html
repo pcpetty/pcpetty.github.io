@@ -50,6 +50,110 @@
         ul li {
             margin-bottom: 0.5rem;
         }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        /* === Primary Buttons === */
+        .primary-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: orange;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .primary-btn:hover {
+            background: darkorange;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #0078d4;
+            margin: 2rem 0 1rem;
+            text-align: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin: 1.5rem 0;
+        }
+        .text-muted {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .content-box {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .centered {
+            text-align: center;
+            margin: 0 auto;
+        }
+              .topbar {
+            background-color: #0078d4;
+            color: white;
+            padding: 1rem;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .nav-logo {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .nav-button {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .nav-dropdown:hover .dropdown-content {
+            display: block;
+        }  
     </style>
 </head>
 <body>
@@ -108,4 +212,19 @@
         &copy; 2025 Cole Petty
     </footer>
 </body>
+    <nav class="topbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">Cole Petty</a>
+        <div class="nav-dropdown">
+            <button class="nav-button">Menu ▼</button>
+            <div class="dropdown-content">
+                <a href="#about">About</a>
+                <a href="Cole_Petty_Resume_APRIL25.html" target="_blank">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="mailto:colepetty57@gmail.com">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
 </html>
